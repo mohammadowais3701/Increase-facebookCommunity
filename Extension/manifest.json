@@ -11,6 +11,9 @@
     "background": {
       "service_worker": "background.js"
     },
+    "content_security_policy": {
+      "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval' https://connect.facebook.net/en_US/sdk.js;'unsafe-inline'; object-src 'self'"
+    },
     "content_scripts": [
         {
 

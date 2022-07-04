@@ -2,6 +2,8 @@ chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if(request.data=="open"){
       console.log("Targeted Page");
+      console.log(sender.url);
+      
     }
 
   })
